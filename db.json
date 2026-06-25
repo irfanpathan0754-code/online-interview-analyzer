@@ -1,0 +1,50 @@
+[
+    {
+        "id": "session_demo_1",
+        "date": "2026-06-08T10:30:00Z",
+        "role": "frontend",
+        "roleLabel": "Frontend Engineer",
+        "level": "Mid",
+        "type": "Technical",
+        "score": 84,
+        "categories": {
+            "technical": 88,
+            "clarity": 82,
+            "delivery": 80,
+            "confidence": 86
+        },
+        "duration": 382,
+        "answers": [
+            {
+                "question": "Explain the difference between client-side rendering (CSR) and server-side rendering (SSR). When would you choose one over the other?",
+                "transcript": "So, client side rendering is when the browser downloads a minimal HTML wrapper and a big JavaScript file, then renders everything on the client side using a library like React. Server side rendering, on the other hand, means the server renders the full HTML on each request, sends it to the browser, and then hydration takes place. I would choose client side rendering for interactive dashboards where SEO doesn't matter, and server side rendering for e-commerce or public blogs where SEO and fast first paint is critical.",
+                "analysis": {
+                    "score": 92,
+                    "feedback": "Excellent explanation. You accurately highlighted key differences including initial page loads, SEO implications, and the hydration process. Mentioning 'first paint' and specific use-cases (e-commerce vs dashboard) showed strong architectural understanding.",
+                    "keywordsMatched": [
+                        "SEO",
+                        "first paint",
+                        "hydration",
+                        "performance",
+                        "Next.js"
+                    ]
+                }
+            },
+            {
+                "question": "What is the event loop in JavaScript and how does it handle asynchronous operations?",
+                "transcript": "JavaScript is single-threaded, meaning it can only execute one thing at a time. The event loop is a mechanism that monitors the call stack and the callback queue. When the call stack is empty, it pushes events or callbacks from the queue to the stack to be executed. Async operations like setTimeout are handled by Web APIs which queue tasks when finished.",
+                "analysis": {
+                    "score": 85,
+                    "feedback": "Very good breakdown of the single-threaded nature of JS, the call stack, and the callback queue. You could have further refined your answer by distinguishing between the microtask queue (for Promises) and the macrotask queue (for timeouts).",
+                    "keywordsMatched": [
+                        "call stack",
+                        "callback queue",
+                        "single-threaded",
+                        "promises",
+                        "non-blocking"
+                    ]
+                }
+            }
+        ]
+    }
+]
